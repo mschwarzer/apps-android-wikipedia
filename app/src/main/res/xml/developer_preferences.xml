@@ -3,7 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory android:title="@string/preferences_developer_feature_testing_heading">
-
+        <CheckBoxPreference
+            android:key="@string/preference_key_feature_read_more_citolytics"
+            android:title="@string/preference_key_feature_read_more_citolytics" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/preferences_developer_restbase_heading">

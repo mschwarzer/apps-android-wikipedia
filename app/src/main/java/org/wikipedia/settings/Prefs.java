@@ -423,6 +423,18 @@ public final class Prefs {
         setBoolean(R.string.preference_key_reading_list_page_delete_tutorial_enabled, enabled);
     }
 
+    public static boolean isFeatureReadMoreSearchOpeningTextEnabled() {
+        return getBoolean(R.string.preference_key_feature_read_more_citolytics, true);
+    }
+
+    public static void setFeatureReadMoreSearchOpeningTextEnabled(boolean enabled) {
+        setBoolean(R.string.preference_key_feature_read_more_citolytics, enabled);
+    }
+
+    public static boolean hasFeatureReadMoreSearchOpeningText() {
+        return contains(R.string.preference_key_feature_read_more_citolytics);
+    }
+
     public static boolean isTocTutorialEnabled() {
         return getBoolean(R.string.preference_key_toc_tutorial_enabled, true);
     }
